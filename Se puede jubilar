@@ -1,0 +1,31 @@
+// Nombre: Juan Pablo Suaznabar
+// Registro: 2015113894
+// Totulo: Se puede jubilar
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	int edad,genero,n;
+	cout<<" Ingrese la edad :";
+	cin>>edad;
+	cout<<" Ingrese el su genero, 1 para masculino, 2 para femenino :";
+	cin>>genero;
+	if(genero==1)
+		if(edad>=65)
+			cout<<" Se puede jubilar ";
+		else
+			cout<<" No tiene la edad suficiente siga trabajando ";
+	else
+	{
+		cout<<" Cuantos hijos tiene ?:";
+		cin>>n;
+		if(edad>=(60-n))
+			cout<<" Se puede jubilar ";
+		else
+			cout<< " No tine la edad suficiente siga trabajando ";
+	}
+	getch();
+}
