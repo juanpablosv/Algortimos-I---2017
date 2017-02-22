@@ -1,0 +1,50 @@
+// Nombre: Juan Pablo Suaznabar
+// Registro: 2015113894
+// Totulo: Menu
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	float base,altura,lado,area;
+	int opcion;
+	cout<< " Menu :";
+	cout<< "1. Area del triangulo "<<endl;
+	cout<< "2. Area del rectangulo "<<endl;
+	cout<< "3. Area del cuadrado "<<endl;
+	cout<< "0. Salir "<<endl;
+	cout<< "Elija una opcion: ";
+	cin>> opcion;
+	switch(opcion)
+	{
+	case 1: cout<<" Ingrese la base :";
+		    cin>>base;
+			cout<<" Ingrese la altura :";
+			cin>>altura;
+			area = (base*altura)/2;
+			cout<<" El area es :"<<area;
+			break;
+
+    case 2: cout<<" Ingrese la base :";
+	        cin>>base;
+		    cout<<" Ingrese la altura :";
+		    cin>>altura;
+		    area = base*altura;
+		    cout<<" El area es :"<<area;
+		    break;
+
+	case 3: cout<<" Ingrese el lado :";
+		    cin>>lado;
+		    area = lado*lado;
+		    cout<<" El area es :"<<area;
+			break;
+
+	case 0: cout<< " Salir ";
+		    break;
+			default: cout <<" Error de opcion ";
+			break;
+	}
+getch();
+}
